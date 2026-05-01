@@ -1,0 +1,33 @@
+# Maven
+target/
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.classpath
+*.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Build
+*.class
+.gradle/
+bin/
+out/
+
+# Output
+test-output/
+
+# Test Reports
+test-results/
+coverage/
+
+# Logs
+*.log

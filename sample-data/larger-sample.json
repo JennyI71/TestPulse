@@ -1,0 +1,112 @@
+[
+  {
+    "runId": "run-001",
+    "timestamp": "2026-03-27T10:00:00",
+    "environment": "staging",
+    "tests": [
+      {
+        "name": "com.example.LoginTests.testValidCredentials",
+        "status": "PASSED",
+        "executionTimeMs": 150
+      },
+      {
+        "name": "com.example.LoginTests.testInvalidPassword",
+        "status": "FAILED",
+        "executionTimeMs": 200
+      },
+      {
+        "name": "com.example.UserTests.testCreateUser",
+        "status": "PASSED",
+        "executionTimeMs": 300
+      }
+    ]
+  },
+  {
+    "runId": "run-002",
+    "timestamp": "2026-03-27T11:00:00",
+    "environment": "staging",
+    "tests": [
+      {
+        "name": "com.example.LoginTests.testValidCredentials",
+        "status": "PASSED",
+        "executionTimeMs": 145
+      },
+      {
+        "name": "com.example.LoginTests.testInvalidPassword",
+        "status": "PASSED",
+        "executionTimeMs": 180
+      },
+      {
+        "name": "com.example.UserTests.testCreateUser",
+        "status": "FAILED",
+        "executionTimeMs": 320
+      }
+    ]
+  },
+  {
+    "runId": "run-003",
+    "timestamp": "2026-03-27T12:00:00",
+    "environment": "staging",
+    "tests": [
+      {
+        "name": "com.example.LoginTests.testValidCredentials",
+        "status": "FAILED",
+        "executionTimeMs": 160
+      },
+      {
+        "name": "com.example.LoginTests.testInvalidPassword",
+        "status": "FAILED",
+        "executionTimeMs": 190
+      },
+      {
+        "name": "com.example.UserTests.testCreateUser",
+        "status": "PASSED",
+        "executionTimeMs": 310
+      }
+    ]
+  },
+  {
+    "runId": "run-004",
+    "timestamp": "2026-03-27T13:00:00",
+    "environment": "staging",
+    "tests": [
+      {
+        "name": "com.example.LoginTests.testValidCredentials",
+        "status": "PASSED",
+        "executionTimeMs": 155
+      },
+      {
+        "name": "com.example.LoginTests.testInvalidPassword",
+        "status": "PASSED",
+        "executionTimeMs": 185
+      },
+      {
+        "name": "com.example.UserTests.testCreateUser",
+        "status": "PASSED",
+        "executionTimeMs": 305
+      }
+    ]
+  },
+  {
+    "runId": "run-005",
+    "timestamp": "2026-03-27T14:00:00",
+    "environment": "staging",
+    "tests": [
+      {
+        "name": "com.example.LoginTests.testValidCredentials",
+        "status": "PASSED",
+        "executionTimeMs": 148
+      },
+      {
+        "name": "com.example.LoginTests.testInvalidPassword",
+        "status": "FAILED",
+        "executionTimeMs": 195
+      },
+      {
+        "name": "com.example.UserTests.testCreateUser",
+        "status": "FAILED",
+        "executionTimeMs": 315
+      }
+    ]
+  }
+]
