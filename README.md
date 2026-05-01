@@ -31,6 +31,10 @@ Stable tests are still included in the overall analysis, but they are marked as 
 **TestPulse follows a simple layered design:**   
 A compact CLI entry point parses arguments, a reader layer parses JSON into domain models, the analyser performs scoring and trend classification, and report writers generate machine- and human-readable outputs.
 
+## Diagram
+
+![Alt text](images/ArchitectureDiagram.png)
+
 
 ## Requirements
 
@@ -315,24 +319,6 @@ The modular architecture supports easy extensions:
 * Add a web dashboard by integrating report writers with a web framework
 * Integrate into CI pipelines via API wrappers or plugins
 * Add database storage by replacing file-based readers/writers with ORM layers
-
-## Architecture Diagram
-
-```
-CLI (TestPulseApp)
-    ↓
-Config (AnalysisConfig)
-    ↓
-Reader (JsonTestRunReader)
-    ↓
-Indexer (TestHistoryIndexer)
-    ↓
-Scorer (FlakinessScorer)
-    ↓
-Analyser (FlakinessAnalyser)
-    ↓
-Report Writers (JsonReportWriter, TextReportWriter)
-```
 
 ---
 
