@@ -35,6 +35,36 @@ A compact CLI entry point parses arguments, a reader layer parses JSON into doma
 
 ![Alt text](images/ArchitectureDiagram.png)
 
+## Domain model
+
+```text
++---------------------------------------------+        contains        +--------------------------------------+
+|                   TestRun                   | --------------------> |              TestResult              |
++---------------------------------------------+                       +--------------------------------------+
+| - runId: String                             |                       | - testName: String                   |
+| - timestamp: LocalDateTime                  |                       | - status: TestStatus                 |
+| - environment: String                       |                       | - executionTimeMs: long              |
+| - testResults: Map<String, TestResult>      |                       +--------------------------------------+
++---------------------------------------------+                       | + getTestName(): String              |
+| + getRunId(): String                        |                       | + getStatus(): TestStatus            |
+| + getTimestamp(): LocalDateTime             |                       | + getExecutionTimeMs(): long         |
+| + getEnvironment(): String                  |                       +--------------------------------------+
+| + addTestResult(TestResult): void           |                                           |
+| + getTestResult(String): TestResult         |                                           | uses
+| + getTestResults(): Map<String, TestResult> |                                           v
+| + getTotalTests(): int                      |                       +--------------------------------------+
++---------------------------------------------+                       |              TestStatus              |
+                                                                      +--------------------------------------+
+                                                                      | PASSED                               |
+                                                                      | FAILED                               |
+                                                                      | SKIPPED                              |
+                                                                      | ERROR                                |
+                                                                      +--------------------------------------+
+                                                                      | + getValue(): String                 |
+                                                                      | + fromString(String): TestStatus     |
+                                                                      +--------------------------------------+
+```
+
 
 ## Requirements
 
