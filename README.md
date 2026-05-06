@@ -38,7 +38,7 @@ A compact CLI entry point parses arguments, a reader layer parses JSON into doma
 ## Domain model
 
 ```text
-+---------------------------------------------+        contains        +--------------------------------------+
++---------------------------------------------+        contains       +--------------------------------------+
 |                   TestRun                   | --------------------> |              TestResult              |
 +---------------------------------------------+                       +--------------------------------------+
 | - runId: String                             |                       | - testName: String                   |
